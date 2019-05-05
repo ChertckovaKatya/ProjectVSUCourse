@@ -4,14 +4,24 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+    <!--<servlet>-->
+        <!--<servlet-name>MainServlet</servlet-name>-->
+        <!--<servlet-class>Servlets.MainServlet</servlet-class>-->
+    <!--</servlet>-->
+
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>MainServlet</servlet-name>-->
+        <!--<url-pattern>/</url-pattern>-->
+    <!--</servlet-mapping>-->
+
     <servlet>
-        <servlet-name>MainServlet</servlet-name>
-        <servlet-class>Servlets.MainServlet</servlet-class>
+        <servlet-name>AuthorizationServlet</servlet-name>
+        <servlet-class>Servlets.AuthorizationServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>MainServlet</servlet-name>
-        <url-pattern>/hello-world</url-pattern>
+        <servlet-name>AuthorizationServlet</servlet-name>
+        <url-pattern>/Authorization</url-pattern>
     </servlet-mapping>
 
 </web-app>

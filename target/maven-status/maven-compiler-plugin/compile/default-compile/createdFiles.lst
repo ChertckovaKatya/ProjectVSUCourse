@@ -1,2 +1,7 @@
 Servlets\MainServlet.class
-Cathedral\ConnectionManager.class
+Cathedral\User.class
+Cathedral\Configs.class
+Cathedral\Auth.class
+Cathedral\Const.class
+Servlets\AuthorizationServlet.class
+Cathedral\DatabaseHandler.class

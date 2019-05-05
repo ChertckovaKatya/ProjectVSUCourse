@@ -11,6 +11,7 @@
     <title>example.com</title>
   </head>
   <body>
-  <h1> Hello ${name}</h1>
+  <h1> Авторизация </h1>
+  <p><button onclick="location.href='/Authorization'">Авторизация</button></p>
   </body>
 </html>
