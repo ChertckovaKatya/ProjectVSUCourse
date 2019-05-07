@@ -5,17 +5,20 @@ import java.sql.*;
 public class DatabaseHandler extends Configs{
     private ResultSet result;
     private PreparedStatement preStm;
-    private Connection dbConnection;
+    public static Statement dbConnection;
 
-    public Connection getDbConnection(String query)
+    public ResultSet getDbConnection(String query)
             throws ClassNotFoundException, SQLException{
         String myDriver = "com.mysql.jdbc.Driver";
         String connectionString = "jdbc:mysql//"+ dbHost + ":"
-                + dbPort + "/" + dbName;
+                + dbPort + "/" + dbName + "?useSSL=false";
+        System.out.println("jdbc:mysql//"+ dbHost + ":"
+                + dbPort + "/" + dbName + "?useSSL=false");
         try {
             Class.forName(myDriver);
-            dbConnection = DriverManager.getConnection(connectionString,dbUser,dbPass);
-            return dbConnection;
+            dbConnection = DriverManager.getConnection(connectionString,dbUser,dbPass).createStatement();
+            result = dbConnection.executeQuery(query);
+            return result;
         }
         catch (Exception e) {
         System.err.println("Ошибка подключения к базе данных!");
@@ -24,14 +27,15 @@ public class DatabaseHandler extends Configs{
     }
     }
 
-    public ResultSet resultQuery (String query) {
-        try {
-            preStm = dbConnection.prepareStatement(query);
-            result = preStm.executeQuery();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return result;
-    }
+//    public ResultSet resultQuery (String query) {
+//        try {
+////            System.out.println(query);
+////            preStm = dbConnection.prepareStatement(query);
+//            result = dbConnection.executeQuery(query);
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        return result;
+//    }
 
 }
