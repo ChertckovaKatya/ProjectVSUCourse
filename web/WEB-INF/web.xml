@@ -24,4 +24,14 @@
         <url-pattern>/Authorization</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>botServlet</servlet-name>
+        <servlet-class>Servlets.BotServlet</servlet-class>
+        <load-on-startup>0</load-on-startup>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>botServlet</servlet-name>
+        <url-pattern>/bot</url-pattern>
+    </servlet-mapping>
+
 </web-app>

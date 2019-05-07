@@ -15,13 +15,11 @@
 <%
 
     try {
-        List names = (List) request.getAttribute("userNames");
-        if (!names.isEmpty()) {
-            if (request.getAttribute("userName") != null) {
-                out.println(" Пользователь '" + request.getAttribute("userName") + "' авторизован! ");
-            } else {
-                out.println("Неправильный логин или пароль");
-            }
+        List names = (List) request.getAttribute("auth");
+        if (!names.isEmpty())
+        {
+            out.println("Неправильный логин или пароль");
+
         }
     }
     catch (NullPointerException e){
@@ -31,7 +29,7 @@
 <div>
     <h1>Авторизация</h1>
 </div>
-    <form method="post">
+    <form method="post" action="Authorization">
         <label> Логин <input type="text" name="login"><br />
         </label>
         <br><br>
@@ -40,5 +38,9 @@
         <br><br>
         <button type="submit"> Войти </button>
     </form>
+<%--<selection>--%>
+    <%--<jsp:useBean id="auth" scope="request" type="Cathedral.Auth"/>--%>
+    <%--<h2>Неправильный логин или пароль</h2>--%>
+<%--</selection>--%>
     </body>
 </html>

@@ -1,3 +1,4 @@
+Cathedral\Bot.class
 Servlets\MainServlet.class
 Cathedral\User.class
 Cathedral\Configs.class
@@ -5,3 +6,4 @@ Cathedral\Auth.class
 Cathedral\Const.class
 Servlets\AuthorizationServlet.class
 Cathedral\DatabaseHandler.class
+Servlets\BotServlet.class

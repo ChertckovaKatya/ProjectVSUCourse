@@ -13,5 +13,6 @@
   <body>
   <h1> Авторизация </h1>
   <p><button onclick="location.href='/Authorization'">Авторизация</button></p>
+  <li><a href="bot">Bot</a></li>
   </body>
 </html>

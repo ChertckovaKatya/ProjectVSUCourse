@@ -12,6 +12,7 @@ public class Auth extends DatabaseHandler {
 
     public Boolean CheckLoginName (User user){
         String query = "SELECT Name,Password from User where Name='"+ Const.USER_NAME +"' AND Password = '" + Const.USER_PASSWORD + "';";
+        System.out.println("SELECT Name,Password from User where Name='\"+ Const.USER_NAME +\"' AND Password = '\" + Const.USER_PASSWORD + \"';");
         ResultSet result = conn.resultQuery(query);
         if (result !=null) {
             return true;
