@@ -12,7 +12,7 @@
 </head>
 <body>
 <section>
-    <jsp:useBean id="bot" scope="request" type="Cathedral.Bot"/>
+    <jsp:useBean id="bot" scope="request" type="Cathedra.Bot"/>
     <form method="post" action="bot?action=submit">
         <dl>
             <dt>ID: </dt>

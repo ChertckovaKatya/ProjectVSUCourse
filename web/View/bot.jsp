@@ -9,12 +9,12 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Cathedral.Bot</title>
+    <title>Cathedra.Bot</title>
 </head>
 <body>
 <section>
-    <h3>Cathedral.Bot info</h3>
-    <jsp:useBean id="bot" scope="request" type="Cathedral.Bot"/>
+    <h3>Cathedra.Bot info</h3>
+    <jsp:useBean id="bot" scope="request" type="Cathedra.Bot"/>
     <tr>
         <td>ID: ${bot.id} | Name: ${bot.name} | Serial number: ${bot.serial}</td>
         <td><a href="bot?action=update">Update</a></td>

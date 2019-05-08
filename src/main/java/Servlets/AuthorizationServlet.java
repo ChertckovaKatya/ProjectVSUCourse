@@ -1,7 +1,7 @@
 package Servlets;
 
-import Cathedral.Auth;
-import Cathedral.User;
+import Cathedra.Auth;
+import Cathedra.User;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;

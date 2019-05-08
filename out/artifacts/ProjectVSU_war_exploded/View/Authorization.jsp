@@ -39,7 +39,7 @@
         <button type="submit"> Войти </button>
     </form>
 <%--<selection>--%>
-    <%--<jsp:useBean id="auth" scope="request" type="Cathedral.Auth"/>--%>
+    <%--<jsp:useBean id="auth" scope="request" type="Cathedra.Auth"/>--%>
     <%--<h2>Неправильный логин или пароль</h2>--%>
 <%--</selection>--%>
     </body>

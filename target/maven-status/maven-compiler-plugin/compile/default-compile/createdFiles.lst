@@ -1,9 +1,9 @@
-Cathedral\Bot.class
+Cathedra\DatabaseHandler.class
 Servlets\MainServlet.class
-Cathedral\User.class
-Cathedral\Configs.class
-Cathedral\Auth.class
-Cathedral\Const.class
+Cathedra\Configs.class
+Cathedra\Const.class
+Cathedra\User.class
+Cathedra\Auth.class
+Cathedra\Bot.class
 Servlets\AuthorizationServlet.class
-Cathedral\DatabaseHandler.class
 Servlets\BotServlet.class

@@ -1,6 +1,6 @@
 package Servlets;
 
-import Cathedral.Bot;
+import Cathedra.Bot;
 
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
