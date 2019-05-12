@@ -9,8 +9,7 @@
     </filter>
     <filter-mapping>
         <filter-name>AuthFilter</filter-name>
-        <url-pattern>/</url-pattern>
-
+        <url-pattern>/Authorization</url-pattern>
     </filter-mapping>
 
     <servlet>
@@ -20,6 +19,25 @@
     <servlet-mapping>
         <servlet-name>LogoutServlet</servlet-name>
         <url-pattern>/logout</url-pattern>
+    </servlet-mapping>
+
+    <context-param>
+        <description>Location to store uploaded file</description>
+        <param-name>file-upload</param-name>
+        <param-value>
+            <!--D:\apache-tomcat-9.0.19\webapps-->
+            D:\ProjectCathedra\src\main\java\AllFilesTXT\
+        </param-value>
+    </context-param>
+
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>Servlets.Serv.UploadServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/UploadServlet</url-pattern>
     </servlet-mapping>
 
     <context-param>

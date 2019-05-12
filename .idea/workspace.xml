@@ -6,7 +6,18 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0172ffd2-bcdf-4ab0-be6a-f99e1d0068c1" name="Default" comment="" />
+    <list default="true" id="0172ffd2-bcdf-4ab0-be6a-f99e1d0068c1" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/../ProjectCathedra/src/main/java/AllFilesTXT/file.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProjectCathedra/web/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectCathedra/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectCathedra/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectCathedra/ProjectCathedra.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectCathedra/ProjectCathedra.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectCathedra/out/artifacts/ProjectCathedra_war_exploded/WEB-INF/classes/Servlets/Serv/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectCathedra/out/artifacts/ProjectCathedra_war_exploded/WEB-INF/classes/Servlets/Serv/LogoutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectCathedra/out/artifacts/ProjectCathedra_war_exploded/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectCathedra/out/artifacts/ProjectCathedra_war_exploded/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectCathedra/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectCathedra/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/LogoutServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/LogoutServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectCathedra/target/classes/Servlets/Serv/LogoutServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectCathedra/target/classes/Servlets/Serv/LogoutServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProjectCathedra/web/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProjectCathedra/web/WEB-INF/web.xml" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,42 +29,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+            <state relative-caret-position="252">
+              <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AuthFilter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Filter/AuthFilter.java">
+      <file leaf-file-name="UploadServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/UploadServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="262">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1089#1119#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Cathedra/Model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DatabaseHandler.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Cathedra/Contr/DatabaseHandler.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
+            <state relative-caret-position="1020">
+              <caret line="90" column="75" lean-forward="true" selection-start-line="90" selection-start-column="75" selection-end-line="90" selection-end-column="75" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,29 +53,17 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ProjectCathedra/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
+            <state relative-caret-position="733">
+              <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ContextListener.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/ContextListener.java">
+      <file leaf-file-name="download.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/View/Files/download.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="15" column="56" lean-forward="true" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LogoutServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/LogoutServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
+            <state relative-caret-position="153">
+              <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -94,8 +71,8 @@
       <file leaf-file-name="Authorization.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/View/View_auth/Authorization.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
+            <state relative-caret-position="340">
+              <caret line="20" column="58" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -119,6 +96,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../ProjectCathedra" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -134,10 +114,14 @@
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../ProjectCathedra/src/main/java/Cathedra/Model/User.java" />
-        <option value="$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/ContextListener.java" />
         <option value="$PROJECT_DIR$/../ProjectCathedra/src/main/java/Cathedra/Contr/DatabaseHandler.java" />
         <option value="$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Filter/AuthFilter.java" />
+        <option value="$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/LogoutServlet.java" />
+        <option value="$PROJECT_DIR$/../ProjectCathedra/pom.xml" />
+        <option value="$PROJECT_DIR$/../ProjectCathedra/web/View/Files/download.jsp" />
+        <option value="$PROJECT_DIR$/../ProjectCathedra/web/index.jsp" />
+        <option value="$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/UploadServlet.java" />
         <option value="$PROJECT_DIR$/../ProjectCathedra/web/WEB-INF/web.xml" />
       </list>
     </option>
@@ -170,6 +154,9 @@
     <option name="width" value="689" />
     <option name="height" value="731" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -199,6 +186,14 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="AllFilesTXT" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
@@ -268,6 +263,13 @@
               <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="Files" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
               <item name="View_auth" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -275,6 +277,10 @@
               <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -288,12 +294,18 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../commons-fileupload-1.4.jar!/" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.33908045" />
     <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\ProjectCathedra\web" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -432,80 +444,90 @@
       <option name="presentableId" value="Default" />
       <updated>1557598427888</updated>
       <workItem from="1557598430587" duration="3250000" />
-      <workItem from="1557608665878" duration="3389000" />
+      <workItem from="1557608665878" duration="17595000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6639000" />
+    <option name="totallyTimeSpent" value="20845000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="736" extended-state="7" />
+    <frame x="-4" y="-4" width="1374" height="736" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
       <window_info anchor="bottom" id="Application Servers" order="7" weight="0.27227724" />
-      <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="5" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
+      <window_info id="UI Designer" order="4" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32838285" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info id="Image Layers" order="2" />
-      <window_info anchor="bottom" id="Java Enterprise" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="3" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32343236" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.71882087" visible="true" weight="0.25340393" />
-      <window_info id="Web" order="2" sideWeight="0.28117913" side_tool="true" weight="0.24962178" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32838285" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32838285" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.15511551" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32838285" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7636719" visible="true" weight="0.25340393" />
+      <window_info id="Web" order="6" sideWeight="0.23632812" side_tool="true" weight="0.25340393" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Application Servers" order="0" visible="true" weight="0.27227724" />
-      <window_info id="Designer" order="0" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info id="Image Layers" order="1" />
-      <window_info anchor="bottom" id="Run" order="8" />
-      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Favorites" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="6" sideWeight="0.71882087" visible="true" weight="0.24962178" />
-      <window_info anchor="bottom" id="Java Enterprise" order="3" />
-      <window_info anchor="bottom" id="Database Changes" order="4" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="5" show_stripe_button="false" />
-      <window_info anchor="right" id="Maven Projects" order="2" />
-      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Message" order="6" />
-      <window_info active="true" id="Web" order="5" sideWeight="0.28117913" side_tool="true" visible="true" weight="0.24962178" />
-      <window_info anchor="right" id="Palette&#9;" order="4" />
-      <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Application Servers" order="7" weight="0.27227724" />
+      <window_info id="Designer" order="2" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.15511551" />
+      <window_info id="Image Layers" order="3" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32838285" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="9" weight="0.32838285" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32838285" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7636719" visible="true" weight="0.25340393" />
+      <window_info anchor="bottom" id="Java Enterprise" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32838285" />
+      <window_info anchor="right" id="Maven Projects" order="8" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info id="Web" order="6" sideWeight="0.23632812" side_tool="true" visible="true" weight="0.25340393" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+      <window_info anchor="right" id="Theme Preview" order="7" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -599,73 +621,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/View/View_auth/user_menu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="7" selection-start-line="16" selection-start-column="7" selection-end-line="16" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/View/View_auth/Authorization.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="22" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="32" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Cathedra/Model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
           <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Filter/AuthFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="262">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1089#1119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="42" column="19" selection-start-line="42" selection-start-column="19" selection-end-line="42" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/ContextListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="15" column="56" lean-forward="true" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -679,13 +638,134 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/ContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="20" column="45" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="191">
+          <caret line="747" selection-start-line="747" selection-end-line="747" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/javax/management/remote/rmi/RMIConnectionImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="828" selection-start-line="828" selection-end-line="828" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/com/sun/jmx/mbeanserver/JmxMBeanServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="800" selection-start-line="800" selection-end-line="800" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Class.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-168">
+          <caret line="2582" selection-start-line="2582" selection-end-line="2582" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/com/sun/jmx/interceptor/DefaultMBeanServerInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="107">
+          <caret line="818" selection-start-line="818" selection-end-line="818" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/View/View_auth/user_menu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Filter/AuthFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="88" selection-start-line="88" selection-end-line="88" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1089#1119#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/View/View_auth/Authorization.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/View/Files/download.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="6" lean-forward="true" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="733">
+          <caret line="58" column="10" lean-forward="true" selection-start-line="58" selection-start-column="10" selection-end-line="58" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/AllFilesTXTРќРѕРІС‹Р№ С‚РµРєСЃС‚РѕРІС‹Р№ РґРѕРєСѓРјРµРЅС‚.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/UploadServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="90" column="75" lean-forward="true" selection-start-line="90" selection-start-column="75" selection-end-line="90" selection-end-column="75" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/AllFilesTXT/file.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="29" column="22" lean-forward="true" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>ProjectCathedra:war exploded</last-edited>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -759,6 +839,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited />
           <splitter-proportions>
             <option name="proportions">
               <list>
