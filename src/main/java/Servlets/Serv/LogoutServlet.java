@@ -18,6 +18,6 @@ public class LogoutServlet extends HttpServlet {
         session.removeAttribute("login");
         session.removeAttribute("role");
 
-        response.sendRedirect("/Authorization");
+        response.sendRedirect("/AuthFilter");
     }
 }

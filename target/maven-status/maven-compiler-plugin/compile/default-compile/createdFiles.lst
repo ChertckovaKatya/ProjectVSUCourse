@@ -1,0 +1,8 @@
+Cathedra\Model\User.class
+Servlets\Serv\FilterServlet.class
+Servlets\Serv\LogoutServlet.class
+Servlets\Filter\AuthFilter.class
+Cathedra\Contr\Config.class
+Servlets\Serv\UploadServlet.class
+Cathedra\Model\User$ROLE.class
+Cathedra\Contr\DatabaseHandler.class

@@ -12,7 +12,8 @@
   </head>
   <body>
   <h1> Авторизация </h1>
-  <p><button onclick="location.href='/Authorization'">Авторизация</button></p>
+  <p><button onclick="location.href='/AuthFilter'">Авторизация</button></p>
   <p><button onclick="location.href='/UploadServlet'">Загрузить файл</button></p>
   </body>
+
 </html>

@@ -4,18 +4,18 @@ import Cathedra.Model.User;
 
 import java.sql.*;
 
-public class DatabaseHandler {
+import static Cathedra.Contr.Config.*;
+
+public class DatabaseHandler  {
     private Connection conn = null;
     private ResultSet result;
     private PreparedStatement preStm;
     public static Statement dbConnection;
 
     public DatabaseHandler() {
-    }
-
-    public DatabaseHandler(String myUrl, String dbUser, String dbPass ) {
-        String myDriver = "com.mysql.cj.jdbc.Driver";
-//        String myUrl = "jdbc:mysql://"+dbHost+":"+dbPort+"/"+dbName+"?useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+//        String myDriver = "com.mysql.cj.jdbc.Driver";
+        String myUrl = "jdbc:mysql://"+dbHost+":"+dbPort+"/"+dbName+"?useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
+        System.out.println(myUrl);
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
             this.conn = DriverManager.getConnection(myUrl, dbUser, dbPass);
@@ -49,18 +49,17 @@ public class DatabaseHandler {
         String name = user.getName();
         String password = user.getPassword();
         String query = "SELECT Name,Password from User where Name='"+ name +"' AND Password = '" + password + "';";
-        //System.out.println("SELECT Name,Password from User where Name='"+ name +"' AND Password = '" + password + "';");
+        System.out.println("SELECT Name,Password from User where Name='"+ name +"' AND Password = '" + password + "';");
         result = resultQuery(query);
-        while (result.next()) {
-            System.out.println(result.getString("Name")+" , "+ result.getString("Password"));
-        }
-        if (result!=null) {
+        if (result.next()) {
             return true;
         }
         else {
             return false;
         }
     }
+
+
 
     public User.ROLE getRoleByLoginPassword(User user) throws SQLException, ClassNotFoundException {
         User.ROLE role = User.ROLE.UNKNOWN;

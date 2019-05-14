@@ -2,21 +2,20 @@ package Servlets.Filter;
 
 import Cathedra.Contr.DatabaseHandler;
 import Cathedra.Model.User;
-
-import javax.servlet.FilterConfig;
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.concurrent.atomic.AtomicReference;
 
 import static java.util.Objects.nonNull;
 
+
+//@WebFilter(urlPatterns = { "/AuthFilter" })
 public class  AuthFilter implements javax.servlet.Filter {
 
-    private FilterConfig filterConfig;
     @Override
     public void destroy() {
 
@@ -29,16 +28,17 @@ public class  AuthFilter implements javax.servlet.Filter {
         final HttpServletRequest request = (HttpServletRequest) req;
         final HttpServletResponse response = (HttpServletResponse) resp;
 
+
+
         final String login = request.getParameter("login");
         final String password = request.getParameter("password");
-        System.out.println(login+"  "+password);
 
-        @SuppressWarnings("unchecked")
-        final AtomicReference<DatabaseHandler> auth = (AtomicReference< DatabaseHandler>) req.getServletContext().getAttribute("dao");
-
-        //DatabaseHandler auth=(DatabaseHandler) request.getServletContext().getAttribute("db");
+        DatabaseHandler auth = new DatabaseHandler();
+//        final DatabaseHandler auth=(DatabaseHandler) request.getServletContext().getAttribute("");
 
         final HttpSession session = request.getSession();
+
+        if ((login != null) && (password !=null)){
 
         if (nonNull(session) &&
                 nonNull(session.getAttribute("login")) &&
@@ -50,25 +50,30 @@ public class  AuthFilter implements javax.servlet.Filter {
 
         } else {
             try {
-                //System.out.println(auth.get().CheckLoginName(new User(login, password)));
-                if (auth.get().CheckLoginName(new User(login, password)) ){
-
-                    final User.ROLE role = auth.get().getRoleByLoginPassword(new User(login, password));
-                    request.getSession().setAttribute("password", password);
-                    request.getSession().setAttribute("login", login);
-                    request.getSession().setAttribute("role", role);
-
-                    moveToMenu(request, response, role);
+                System.out.println("проверка на существование юзера"+auth.CheckLoginName(new User(login, password)));
+               if ( auth.CheckLoginName(new User(login, password)) ){
+                        System.out.println("узнает роль");
+                        final User.ROLE role = auth.getRoleByLoginPassword(new User(login, password));
+                        request.getSession().setAttribute("password", password);
+                        request.getSession().setAttribute("login", login);
+                        request.getSession().setAttribute("role", role);
+                        System.out.println(role);
+                        moveToMenu(request, response, role);
 
                 } else {
 
                     moveToMenu(request, response, User.ROLE.UNKNOWN);
                 }
+
             } catch (SQLException e) {
                 e.printStackTrace();
             } catch (ClassNotFoundException e) {
                 e.printStackTrace();
             }
+        }
+        }
+        else {
+            req.getRequestDispatcher("/View_auth/Authorization.jsp").forward(request, response);
         }
     }
     private void moveToMenu(final HttpServletRequest req,
@@ -79,15 +84,15 @@ public class  AuthFilter implements javax.servlet.Filter {
 
         if (role.equals(User.ROLE.ADMIN)) {
 
-            req.getRequestDispatcher("/View/View_auth/admin_menu.jsp").forward(req, res);
+            req.getRequestDispatcher("/View_auth/admin_menu.jsp").forward(req, res);
 
         } else if (role.equals(User.ROLE.USER)) {
 
-            req.getRequestDispatcher("/View/View_auth/user_menu.jsp").forward(req, res);
+            req.getRequestDispatcher("/View_auth/user_menu.jsp").forward(req, res);
 
         } else {
 
-            req.getRequestDispatcher("/View/View_auth/Authorization.jsp").forward(req, res);
+            req.getRequestDispatcher("/View_auth/Authorization.jsp").forward(req, res);
         }
     }
 
