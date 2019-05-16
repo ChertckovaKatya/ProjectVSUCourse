@@ -1,5 +1,6 @@
 package Servlets.Serv;
 
+import Cathedra.Model.FileProcessing;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
@@ -89,6 +90,8 @@ public class UploadServlet extends HttpServlet {
                     }
                     fi.write(file);
                     out.println("Uploaded Filename: " + fileName + "<br>");
+                    FileProcessing file = new FileProcessing();
+                    //file.
                 }
             }
             out.println("</body>");
