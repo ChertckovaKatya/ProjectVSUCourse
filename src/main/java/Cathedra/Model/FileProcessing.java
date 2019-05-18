@@ -1,43 +1,89 @@
 package Cathedra.Model;
 
+import Cathedra.Contr.DatabaseHandler;
+
 import java.io.File;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.sql.SQLException;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class FileProcessing {
+    DatabaseHandler db = new DatabaseHandler();
+    Integer size;
 
+    public Boolean  parsingFile (String name) throws IOException, SQLException {
 
-    public void  parsingFile (String name) throws IOException {
+        File file = new File("D://ProjectCathedra//src//main//java//AllFilesTXT",name);
 
-        File file = new File(name);
-        if (file.isFile()){
+        if (file.isFile()) {
             List<String> lines;
             Path filePars = Paths.get("D://ProjectCathedra//src//main//java//AllFilesTXT",name);
-            lines = Files.readAllLines(filePars, StandardCharsets.UTF_8);
-            Stream<String> QuestionsAnswer = lines.stream();
-            String FirstLine = String.valueOf(QuestionsAnswer.limit(1).toArray());
-            ArrayList arrayFirstLine= new ArrayList(Arrays.asList(FirstLine.split("|")));
-            String Subject = arrayFirstLine.get(1).toString(); //Название предмета
-            Integer NumberOfQuestions = (Integer)arrayFirstLine.get(2); // Количество вопросов
-            Integer LeadTime = (Integer)arrayFirstLine.get(3); // Время выполнения теста
-            Integer TotalScore = (Integer)arrayFirstLine.get(4); //Общий балл за тест
+            if (filePars!=null) {
+                lines = Files.readAllLines(filePars, StandardCharsets.UTF_8);
+                String first = lines.get(0);
+                String[] parametersTest = first.split("\\|");
+                String Subject = parametersTest[0];                                 //Название предмета
+                Integer idSubject = db.defineTheidSubject(Subject);                   //определяет номер предмета
+                Integer NumberOfQuestions = Integer.valueOf(parametersTest[1]);      // Количество вопросов
+                Integer LeadTime = Integer.valueOf(parametersTest[2]);               // Время выполнения теста
+                Integer TotalScore = Integer.valueOf(parametersTest[3]);             //Общий балл за тест
+                if (idSubject!=null) {
+                    Boolean TestAdded = db.addTest(idSubject, NumberOfQuestions, LeadTime, TotalScore); // добавляем данные теста
+                    Integer idTest = db.defineTheidTest(idSubject, NumberOfQuestions, LeadTime, TotalScore);  // выясняем id теста, который только что добавили
+                    if (TestAdded && idTest!=null) {
+                        if (NumberOfQuestions>(lines.size()-1)){
+                            size = lines.size()-1;
+                        }
+                        else{
+                            size = NumberOfQuestions;
+                        }
+                        for (int i = 0; i < size; i++) {
+                            String next = lines.get(i + 1);
+                            String[] QuestionsAnswer = next.split("\\|");
+                            Integer typeQuestions = Integer.valueOf(QuestionsAnswer[0]); // тип вопроса
+                            String Questions = QuestionsAnswer[1]; // вопрос
+                            Integer NumberAnswer = Integer.valueOf(QuestionsAnswer[2]);
+                            Boolean QuestionsAdded = db.addQuestions(idTest, Questions, typeQuestions); // добавляем тип вопроса и его формулировку
 
-            List<String> ListOfQuestionsAnswers = Arrays.asList((String.valueOf(QuestionsAnswer.skip(1))).split(","));
+                            if (QuestionsAdded) {
 
+                                Integer idQuestions = db.defineTheidQuestions(idTest, Questions, typeQuestions); //выясняем id вопроса, который только что добавили
+                                if (idQuestions !=null) {
+                                    for (int j = 3; j < (NumberAnswer * 2) + 2; j = j + 2) {
+                                        String Answer = QuestionsAnswer[j];  //вариант ответа
+                                        Integer Mark = Integer.valueOf(QuestionsAnswer[j + 1]); // количество баллов за вариант ответа
 
+                                        Boolean AnswerAdded = db.addAnswer(idQuestions,Answer,Mark);
 
+                                        if (AnswerAdded){
+                                            System.out.println("Варианты ответов успешно добавлены");
+                                        }
+                                    }
 
+                                }
+                            }
+                        }
+                        return true;
+                    }
 
+                }
+                else {
+                    System.out.println("Укажите корректное название предмета");
+                    return false;
+                }
 
-
-
+            }
         }
+        else{
+            System.out.println("не прошел проверку");
+            return false;
+        }
+        return false;
     }
-}
+
+    }
+

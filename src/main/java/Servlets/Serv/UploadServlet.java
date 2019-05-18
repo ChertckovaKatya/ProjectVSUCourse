@@ -90,8 +90,8 @@ public class UploadServlet extends HttpServlet {
                     }
                     fi.write(file);
                     out.println("Uploaded Filename: " + fileName + "<br>");
-                    FileProcessing file = new FileProcessing();
-                    //file.
+                    //FileProcessing file = new FileProcessing();
+                    //file.parsingFile(fileName);
                 }
             }
             out.println("</body>");

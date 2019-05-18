@@ -74,4 +74,14 @@
         <!--<listener-class>Servlets.Serv.ContextListener</listener-class>-->
     <!--</listener>-->
 
+    <servlet>
+        <servlet-name>AddServlet</servlet-name>
+        <servlet-class>Servlets.Serv.AddServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddServlet</servlet-name>
+        <url-pattern>/test</url-pattern>
+    </servlet-mapping>
+
 </web-app>
