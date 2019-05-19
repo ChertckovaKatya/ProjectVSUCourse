@@ -50,8 +50,8 @@ public class  AuthFilter implements javax.servlet.Filter {
 
         } else {
             try {
-                System.out.println("проверка на существование юзера"+auth.CheckLoginName(new User(login, password)));
-               if ( auth.CheckLoginName(new User(login, password)) ){
+               // System.out.println("проверка на существование юзера"+auth.CheckLoginName(new User(login, password)));
+                if ( auth.CheckLoginName(new User(login, password)) ){
                         System.out.println("узнает роль");
                         final User.ROLE role = auth.getRoleByLoginPassword(new User(login, password));
                         request.getSession().setAttribute("password", password);

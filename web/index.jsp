@@ -15,7 +15,7 @@
   <p><button onclick="location.href='/AuthFilter'">Авторизация</button></p>
   <p><button onclick="location.href='/UploadServlet'">Загрузить файл</button></p>
   <p><button onclick="location.href='/test'">Test</button></p>
-  <p><button onclick="location.href='/repeat'">Test</button></p>
+  <p><button onclick="location.href='/questions'">Test</button></p>
 
   </body>
 
