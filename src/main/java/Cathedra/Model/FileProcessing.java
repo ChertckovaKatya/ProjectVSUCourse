@@ -18,7 +18,7 @@ public class FileProcessing {
     public Boolean  parsingFile (String name) throws IOException, SQLException {
 
         File file = new File("D://ProjectCathedra//src//main//java//AllFilesTXT",name);
-
+        File catalog = new File("D://ProjectCathedra//src//main//java//AllFilesTXT");
         if (file.isFile()) {
             List<String> lines;
             Path filePars = Paths.get("D://ProjectCathedra//src//main//java//AllFilesTXT",name);
@@ -67,20 +67,34 @@ public class FileProcessing {
                                 }
                             }
                         }
+                        if (catalog.exists()){
+                            Files.delete(filePars);
+                        }
                         return true;
                     }
 
                 }
                 else {
                     System.out.println("Укажите корректное название предмета");
+                    if (catalog.exists()){
+                        Files.delete(filePars);
+                    }
                     return false;
                 }
 
             }
         }
         else{
+            if (catalog.exists()){
+            Path filePars = Paths.get("D://ProjectCathedra//src//main//java//AllFilesTXT",name);
+            Files.delete(filePars);
+        }
             System.out.println("не прошел проверку");
             return false;
+        }
+        if (catalog.exists()){
+            Path filePars = Paths.get("D://ProjectCathedra//src//main//java//AllFilesTXT",name);
+            Files.delete(filePars);
         }
         return false;
     }

@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
+import java.sql.SQLException;
 import java.util.Iterator;
 import java.util.List;
 
@@ -82,6 +83,8 @@ public class UploadServlet extends HttpServlet {
                     boolean isInMemory = fi.isInMemory();
                     long sizeInBytes = fi.getSize();
 
+                    FileProcessing newFile = new FileProcessing();
+
                     // Write the file
                     if (fileName.lastIndexOf("\\") >= 0) {
                         file = new File(filePath + fileName.substring(fileName.lastIndexOf("\\")));
@@ -89,14 +92,23 @@ public class UploadServlet extends HttpServlet {
                         file = new File(filePath + fileName.substring(fileName.lastIndexOf("\\") + 1));
                     }
                     fi.write(file);
-                    out.println("Uploaded Filename: " + fileName + "<br>");
-                    //FileProcessing file = new FileProcessing();
-                    //file.parsingFile(fileName);
+                    Boolean result = newFile.parsingFile(fileName);
+                    //out.println("Uploaded Filename: " + fileName + "<br>");
+                        if (result){
+                            out.println("Uploaded Filename: " + fileName + "<br>");
+                            out.println("data successfully added");
+
+                        }
+                        else {
+                            out.println("Not loaded Filename: " + fileName + "<br>");
+                            out.println("data not added");
+                        }
                 }
             }
             out.println("</body>");
             out.println("</html>");
         } catch (Exception ex) {
+            out.println("Неверная кодировка файла");
             System.out.println(ex);
         }
     }

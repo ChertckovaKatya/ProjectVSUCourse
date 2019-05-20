@@ -84,4 +84,14 @@
         <url-pattern>/test</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>NewServlet</servlet-name>
+        <servlet-class>Servlets.NewServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>NewServlet</servlet-name>
+        <url-pattern>/questions</url-pattern>
+    </servlet-mapping>
+
 </web-app>
