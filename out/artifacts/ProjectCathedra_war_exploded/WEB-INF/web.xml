@@ -10,17 +10,8 @@
     </filter>
     <filter-mapping>
         <filter-name>AuthFilter</filter-name>
-        <url-pattern>/AuthFilter</url-pattern>
+        <url-pattern>/index.jsp</url-pattern>
     </filter-mapping>
-
-    <!--<servlet>-->
-        <!--<servlet-name>FilterServlet</servlet-name>-->
-        <!--<servlet-class>Servlets.Serv.FilterServlet</servlet-class>-->
-    <!--</servlet>-->
-    <!--<servlet-mapping>-->
-        <!--<servlet-name>FilterServlet</servlet-name>-->
-        <!--<url-pattern>/Authorization</url-pattern>-->
-    <!--</servlet-mapping>-->
 
     <servlet>
         <servlet-name>LogoutServlet</servlet-name>
@@ -35,7 +26,6 @@
         <description>Location to store uploaded file</description>
         <param-name>file-upload</param-name>
         <param-value>
-            <!--D:\apache-tomcat-9.0.19\webapps-->
             D:\ProjectCathedra\src\main\java\AllFilesTXT\
         </param-value>
     </context-param>

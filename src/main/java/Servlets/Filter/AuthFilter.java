@@ -50,9 +50,9 @@ public class  AuthFilter implements javax.servlet.Filter {
 
         } else {
             try {
-               // System.out.println("проверка на существование юзера"+auth.CheckLoginName(new User(login, password)));
+                System.out.println("проверка на существование юзера"+auth.CheckLoginName(new User(login, password)));
                 if ( auth.CheckLoginName(new User(login, password)) ){
-                        System.out.println("узнает роль");
+                       // System.out.println("узнает роль");
                         final User.ROLE role = auth.getRoleByLoginPassword(new User(login, password));
                         request.getSession().setAttribute("password", password);
                         request.getSession().setAttribute("login", login);
@@ -73,7 +73,7 @@ public class  AuthFilter implements javax.servlet.Filter {
         }
         }
         else {
-            req.getRequestDispatcher("/View_auth/Authorization.jsp").forward(request, response);
+            req.getRequestDispatcher("/index.jsp").forward(request, response);
         }
     }
     private void moveToMenu(final HttpServletRequest req,
@@ -92,7 +92,7 @@ public class  AuthFilter implements javax.servlet.Filter {
 
         } else {
 
-            req.getRequestDispatcher("/View_auth/Authorization.jsp").forward(req, res);
+            req.getRequestDispatcher("/index.jsp").forward(req, res);
         }
     }
 

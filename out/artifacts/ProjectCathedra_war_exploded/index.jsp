@@ -37,9 +37,17 @@
                       <li><a href="#"> Новости </a></li>
                       <li><a href="#"> Галерея </a></li>
                     </ul>
-                        <ul class="nav navbar-nav navbar-right">
-                      <li><a href="#"> Войти </a></li>
-                    </ul>
+                    <form method="post" action="" class="form-inline navbar-form navbar-right">
+                      <div class="form-group">
+                        <label for="inputlogin" class="sr-only"></label>
+                        <input type="login" class="form-control" id="inputlogin" name="login" placeholder="Логин">
+                      </div>
+                      <div class="form-group">
+                        <label for="inputpassword" class="sc-only"></label>
+                        <input type="password" class="form-control" id="inputpassword"  name="password" placeholder="Пароль"> 
+                      </div>
+                      <button type="submit" class="btn btn-default">Войти</button>
+                    </form>
                   </div>
                 </div>
           </nav>       
