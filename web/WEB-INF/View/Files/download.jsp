@@ -13,7 +13,7 @@
 
 <body>
 <h3>Загрузка файла:</h3>
-Выбрать файл: <br />
+Выбрать файл : <br />
 <form action = "UploadServlet" method = "post" enctype = "multipart/form-data">
     <input type = "file" name = "file" size = "50" />
     <br />

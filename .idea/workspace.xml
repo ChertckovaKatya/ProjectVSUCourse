@@ -34,50 +34,7 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="AddServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/AddServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UploadServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/UploadServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1423">
-              <caret line="102" column="85" selection-start-line="102" selection-start-column="85" selection-end-line="102" selection-end-column="85" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="download.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/WEB-INF/View/Files/download.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FileProcessing.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Cathedra/Model/FileProcessing.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1649">
-              <caret line="97" column="9" lean-forward="true" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -186,7 +143,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="680" />
     <option name="width" value="689" />
     <option name="height" value="731" />
@@ -211,112 +168,7 @@
             <path>
               <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
               <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Cathedra" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Cathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="Contr" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Cathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="Model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Servlets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Servlets" type="462c0819:PsiDirectoryNode" />
-              <item name="Filter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="Servlets" type="462c0819:PsiDirectoryNode" />
-              <item name="Serv" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
               <item name="web" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="View_auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="Files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ProjectCathedra" type="462c0819:PsiDirectoryNode" />
-              <item name="web" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-              <item name="TypesForms" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="ProjectCathedra" type="b2602c69:ProjectViewProjectNode" />
@@ -341,12 +193,13 @@
     <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\ProjectCathedra\web" />
-      <recent name="D:\ProjectCathedra\web\WEB-INF" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\ProjectCathedra\web" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\ProjectCathedra" />
+      <recent name="D:\ProjectCathedra\web" />
+      <recent name="D:\ProjectCathedra\web\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -491,12 +344,12 @@
       <workItem from="1557833047145" duration="19431000" />
       <workItem from="1557911396760" duration="10207000" />
       <workItem from="1558090481174" duration="17297000" />
-      <workItem from="1558289613279" duration="9318000" />
+      <workItem from="1558289613279" duration="18575000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="77989000" />
+    <option name="totallyTimeSpent" value="87246000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -508,8 +361,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="736" extended-state="6" />
-    <editor active="true" />
+    <frame x="-4" y="-4" width="1374" height="736" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
@@ -530,10 +382,10 @@
       <window_info anchor="bottom" id="Java Enterprise" order="10" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="12" weight="0.32838285" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.31188118" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.31188118" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32838285" />
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7529976" visible="true" weight="0.22163388" />
-      <window_info id="Web" order="6" sideWeight="0.2470024" side_tool="true" visible="true" weight="0.22163388" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.7529976" visible="true" weight="0.24962178" />
+      <window_info id="Web" order="6" sideWeight="0.2470024" side_tool="true" visible="true" weight="0.24962178" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32838285" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
@@ -771,6 +623,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
           <caret line="118" column="39" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -811,13 +666,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/WEB-INF/View/TypesForms/SecondForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -854,13 +702,6 @@
             <element signature="imports" expanded="true" />
             <marker date="1558296586851" expanded="true" signature="1137:1227" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/AddServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -911,10 +752,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/WEB-INF/View/Files/download.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="20" column="7" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Cathedra/Model/FileProcessing.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1649">
-          <caret line="97" column="9" lean-forward="true" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
+          <caret line="97" column="9" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -931,10 +779,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/WEB-INF/View/Files/download.jsp">
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/src/main/java/Servlets/Serv/AddServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="12" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="221">
+          <caret line="22" column="37" selection-start-line="22" selection-start-column="37" selection-end-line="22" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../ProjectCathedra/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="2" selection-start-line="17" selection-start-column="2" selection-end-line="17" selection-end-column="30" />
         </state>
       </provider>
     </entry>
