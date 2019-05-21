@@ -1,8 +1,10 @@
 D:\ProjectCathedra\src\main\java\Cathedra\Contr\DatabaseHandler.java
 D:\ProjectCathedra\src\main\java\Cathedra\Contr\Config.java
+D:\ProjectCathedra\src\main\java\Servlets\Serv\AddServlet.java
 D:\ProjectCathedra\src\main\java\Cathedra\Model\User.java
 D:\ProjectCathedra\src\main\java\Servlets\Filter\AuthFilter.java
 D:\ProjectCathedra\src\main\java\Servlets\Serv\ContextListener.java
 D:\ProjectCathedra\src\main\java\Servlets\Serv\LogoutServlet.java
-D:\ProjectCathedra\src\main\java\Servlets\Serv\FilterServlet.java
+D:\ProjectCathedra\src\main\java\Cathedra\Model\FileProcessing.java
+D:\ProjectCathedra\src\main\java\Servlets\NewServlet.java
 D:\ProjectCathedra\src\main\java\Servlets\Serv\UploadServlet.java

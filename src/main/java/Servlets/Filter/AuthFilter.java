@@ -3,7 +3,6 @@ package Servlets.Filter;
 import Cathedra.Contr.DatabaseHandler;
 import Cathedra.Model.User;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
@@ -13,7 +12,6 @@ import java.sql.SQLException;
 import static java.util.Objects.nonNull;
 
 
-//@WebFilter(urlPatterns = { "/AuthFilter" })
 public class  AuthFilter implements javax.servlet.Filter {
 
     @Override
@@ -50,14 +48,14 @@ public class  AuthFilter implements javax.servlet.Filter {
 
         } else {
             try {
-                System.out.println("проверка на существование юзера"+auth.CheckLoginName(new User(login, password)));
+                //System.out.println("проверка на существование юзера"+auth.CheckLoginName(new User(login, password)));
                 if ( auth.CheckLoginName(new User(login, password)) ){
                        // System.out.println("узнает роль");
                         final User.ROLE role = auth.getRoleByLoginPassword(new User(login, password));
                         request.getSession().setAttribute("password", password);
                         request.getSession().setAttribute("login", login);
                         request.getSession().setAttribute("role", role);
-                        System.out.println(role);
+                       // System.out.println(role);
                         moveToMenu(request, response, role);
 
                 } else {
@@ -73,7 +71,8 @@ public class  AuthFilter implements javax.servlet.Filter {
         }
         }
         else {
-            req.getRequestDispatcher("/index.jsp").forward(request, response);
+            req.setAttribute("result","");
+            request.getRequestDispatcher("/index.jsp").forward(request, response);
         }
     }
     private void moveToMenu(final HttpServletRequest req,
@@ -91,7 +90,7 @@ public class  AuthFilter implements javax.servlet.Filter {
             req.getRequestDispatcher("/View_auth/user_menu.jsp").forward(req, res);
 
         } else {
-
+            req.setAttribute("result","Error");
             req.getRequestDispatcher("/index.jsp").forward(req, res);
         }
     }
