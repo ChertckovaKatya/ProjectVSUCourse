@@ -1,6 +1,6 @@
-package Servlets.Serv;
+package servlets.serv;
 
-import Cathedra.Model.FileProcessing;
+import cathedra.model.FileProcessing;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;

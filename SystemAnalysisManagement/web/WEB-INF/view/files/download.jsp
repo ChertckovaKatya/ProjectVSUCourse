@@ -36,8 +36,8 @@
                       <li><a href="#"> Галерея </a></li>
                       <li><a href="/UploadServlet"> Создать тесты </a></li>
                     </ul>
-                    <form action="" class="form-inline navbar-form navbar-right">
-                      <button type="submit" onclick="location.href='/logout'"class="btn btn-default">Выйти</button>
+                    <form action="" class="nav navbar-nav navbar-right">
+                        <li><a href="/logout"> Выйти </a></li>
                   </form>
                   </div>
                 </div>
@@ -45,6 +45,7 @@
         </div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
     <div>
 	<h3>Загрузка файла:</h3>

@@ -1,4 +1,4 @@
-package Servlets.Serv;
+package servlets.serv;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -17,9 +17,11 @@ public class LogoutServlet extends HttpServlet {
         session.removeAttribute("password");
         session.removeAttribute("login");
         session.removeAttribute("role");
+        request.getSession().setAttribute("password", null);
+        request.getSession().setAttribute("login", null);
+        request.getSession().setAttribute("role", null);
+        request.setAttribute("result","");
         session.invalidate();
-        if (session != null)
-            session.setMaxInactiveInterval(1);
         response.sendRedirect("/index.jsp");
     }
 }

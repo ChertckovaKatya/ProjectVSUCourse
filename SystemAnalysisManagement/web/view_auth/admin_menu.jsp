@@ -35,8 +35,8 @@
                       <li><a href="#"> Галерея </a></li>
                       <li><a href="/UploadServlet"> Создать тесты </a></li>
                     </ul>
-                    <form action="" class="form-inline navbar-form navbar-right">
-                      <button type="submit" onclick="location.href='/logout'"class="btn btn-default">Выйти</button>
+                    <form action="" class="nav navbar-nav navbar-right">
+                        <li><a href="/logout"> Выйти </a></li>
                   </form>
                   </div>
                 </div>

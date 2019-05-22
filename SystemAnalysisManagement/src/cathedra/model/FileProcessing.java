@@ -1,6 +1,6 @@
-package Cathedra.Model;
+package cathedra.model;
 
-import Cathedra.Contr.DatabaseHandler;
+import cathedra.contr.DatabaseHandler;
 
 import java.io.File;
 import java.io.IOException;
@@ -17,11 +17,11 @@ public class FileProcessing {
 
     public Boolean  parsingFile (String name) throws IOException, SQLException {
 
-        File file = new File("D://ProjectCathedra//src//main//java//AllFilesTXT",name);
-        File catalog = new File("D://ProjectCathedra//src//main//java//AllFilesTXT");
+        File file = new File("D://ProjectCathedra//src//main//java//allFilesTXT",name);
+        File catalog = new File("D://ProjectCathedra//src//main//java//allFilesTXT");
         if (file.isFile()) {
             List<String> lines;
-            Path filePars = Paths.get("D://ProjectCathedra//src//main//java//AllFilesTXT",name);
+            Path filePars = Paths.get("D://ProjectCathedra//src//main//java//allFilesTXT",name);
             if (filePars!=null) {
                 lines = Files.readAllLines(filePars, StandardCharsets.UTF_8);
                 String first = lines.get(0);
@@ -86,18 +86,17 @@ public class FileProcessing {
         }
         else{
             if (catalog.exists()){
-            Path filePars = Paths.get("D://ProjectCathedra//src//main//java//AllFilesTXT",name);
-            Files.delete(filePars);
-        }
+                Path filePars = Paths.get("D://ProjectCathedra//src//main//java//allFilesTXT",name);
+                Files.delete(filePars);
+            }
             System.out.println("не прошел проверку");
             return false;
         }
         if (catalog.exists()){
-            Path filePars = Paths.get("D://ProjectCathedra//src//main//java//AllFilesTXT",name);
+            Path filePars = Paths.get("D://ProjectCathedra//src//main//java//allFilesTXT",name);
             Files.delete(filePars);
         }
         return false;
     }
 
-    }
-
+}

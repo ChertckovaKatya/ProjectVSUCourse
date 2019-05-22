@@ -1,4 +1,4 @@
-package Cathedra.Model;
+package cathedra.model;
 
 import java.util.Objects;
 
@@ -62,10 +62,9 @@ public class User {
                 '}';
     }
 
-
-
     public enum ROLE {
         USER, ADMIN, UNKNOWN
     }
 }
+
 

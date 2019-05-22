@@ -1,4 +1,4 @@
-package Servlets;
+package servlets;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -20,7 +20,7 @@ public class NewServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/View/Files/download.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/view/files/download.jsp").forward(request, response);
 
     }
 }

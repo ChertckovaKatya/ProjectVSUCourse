@@ -1,7 +1,7 @@
-package Servlets.Filter;
+package servlets.filter;
 
-import Cathedra.Contr.DatabaseHandler;
-import Cathedra.Model.User;
+import cathedra.contr.DatabaseHandler;
+import cathedra.model.User;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -83,11 +83,11 @@ public class  AuthFilter implements javax.servlet.Filter {
 
         if (role.equals(User.ROLE.ADMIN)) {
 
-            req.getRequestDispatcher("/View_auth/admin_menu.jsp").forward(req, res);
+            req.getRequestDispatcher("/view_auth/admin_menu.jsp").forward(req, res);
 
         } else if (role.equals(User.ROLE.USER)) {
 
-            req.getRequestDispatcher("/View_auth/user_menu.jsp").forward(req, res);
+            req.getRequestDispatcher("/view_auth/user_menu.jsp").forward(req, res);
 
         } else {
             req.setAttribute("result","Error");

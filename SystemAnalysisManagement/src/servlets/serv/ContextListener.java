@@ -1,12 +1,4 @@
-package Servlets.Serv;
-
-import Cathedra.Contr.DatabaseHandler;
-
-import javax.servlet.ServletContext;
-import javax.servlet.ServletContextEvent;
-import javax.servlet.ServletContextListener;
-import javax.servlet.annotation.WebListener;
-import java.util.concurrent.atomic.AtomicReference;
+package servlets.serv;
 
 //@WebListener
 //public class ContextListener implements ServletContextListener {

@@ -1,12 +1,11 @@
-package Cathedra.Contr;
-
-import Cathedra.Model.User;
+package cathedra.contr;
+import cathedra.model.User;
 
 import java.sql.*;
 
-import static Cathedra.Contr.Config.*;
+import static cathedra.contr.Config.*;
 
-public class DatabaseHandler  {
+public class DatabaseHandler {
     private Connection conn = null;
     private ResultSet result;
     private PreparedStatement preStm;
@@ -68,7 +67,7 @@ public class DatabaseHandler  {
         String name = user.getName();
         String password = user.getPassword();
         String query = "SELECT Role from User where Name='"+ name +"' AND Password = '" + password + "';";
-       // System.out.println("SELECT Role from User where Name='"+ name +"' AND Password = '"+ password +"';");
+        // System.out.println("SELECT Role from User where Name='"+ name +"' AND Password = '"+ password +"';");
         try {
             result = resultQuery(query);
             while (result.next()) {

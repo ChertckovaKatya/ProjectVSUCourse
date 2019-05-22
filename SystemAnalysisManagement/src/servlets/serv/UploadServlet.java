@@ -1,6 +1,6 @@
-package Servlets.Serv;
+package servlets.serv;
 
-import Cathedra.Model.FileProcessing;
+import cathedra.model.FileProcessing;
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.File;
 import java.io.IOException;
-import java.sql.SQLException;
 import java.util.Iterator;
 import java.util.List;
 
@@ -51,7 +50,7 @@ public class UploadServlet extends HttpServlet {
         factory.setSizeThreshold(maxMemSize);
 
         // Location to save data that is larger than maxMemSize.
-        factory.setRepository(new File("D:\\ProjectCathedra\\src\\main\\java\\AllFilesTXT\\"));
+        factory.setRepository(new File("D:\\ProjectCathedra\\src\\main\\java\\allFilesTXT\\"));
 
         // Create a new file upload handler
         ServletFileUpload upload = new ServletFileUpload(factory);
@@ -114,7 +113,7 @@ public class UploadServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/View/Files/download.jsp").forward(request, response);
+        request.getRequestDispatcher("/WEB-INF/view/files/download.jsp").forward(request, response);
 //            throw new ServletException("GET method used with " +
 //                    getClass( ).getName( )+": POST method required.");
     }

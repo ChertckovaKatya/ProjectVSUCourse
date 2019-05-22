@@ -1,1 +1,9 @@
-Config.java
+/SystemAnalysisManagement/src/cathedra/contr/Config.java
+/.idea/*
+/lib/*
+/out/*
+/src/*
+/target/*
+/web/*
+Cathedra.iml
+
