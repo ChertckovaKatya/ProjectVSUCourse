@@ -71,7 +71,7 @@ public class  AuthFilter implements javax.servlet.Filter {
         }
         }
         else {
-            req.setAttribute("result","");
+            request.setAttribute("result","no");
             request.getRequestDispatcher("/index.jsp").forward(request, response);
         }
     }
