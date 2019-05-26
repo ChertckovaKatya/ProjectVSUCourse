@@ -10,9 +10,9 @@
   <head>
 
     <title>example.com</title>
-    
+    <%@include file='view_of_main_pages/patterns/panel_index.jsp'%>
   </head>
   <body>
-    <%@include file='patterns/panel_index.jsp'%>
+
   </body>
 </html>

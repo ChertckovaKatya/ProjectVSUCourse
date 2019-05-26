@@ -113,8 +113,7 @@ public class UploadServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/view/files/download.jsp").forward(request, response);
-//            throw new ServletException("GET method used with " +
-//                    getClass( ).getName( )+": POST method required.");
+        request.getRequestDispatcher("/view_of_main_pages/download.jsp").forward(request, response);
+
     }
 }

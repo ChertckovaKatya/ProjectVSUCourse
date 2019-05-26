@@ -1,8 +1,8 @@
 <%--
   Created by IntelliJ IDEA.
   User: Fox
-  Date: 11.05.2019
-  Time: 23:29
+  Date: 25.05.2019
+  Time: 14:23
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -17,6 +17,7 @@
     <title>ADMIN</title>
 </head>
  <body>
+ <header>
         <div class="container">
               <nav class="navbar navbar-default navbar-fixed-top">
                 <div class="container">
@@ -45,5 +46,6 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</body>
+ </header>
+ </body>
 </html>

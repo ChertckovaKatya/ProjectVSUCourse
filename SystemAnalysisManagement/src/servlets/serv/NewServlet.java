@@ -1,4 +1,4 @@
-package servlets;
+package servlets.serv;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,7 +10,6 @@ import java.io.IOException;
 @WebServlet(name = "NewServlet")
 public class NewServlet extends HttpServlet {
 
-    int[] array = {1,2,3};
 
 
     @Override
@@ -20,7 +19,7 @@ public class NewServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.getRequestDispatcher("/WEB-INF/view/files/download.jsp").forward(request, response);
+        request.getRequestDispatcher("/view_of_main_pages/test.jsp").forward(request, response);
 
     }
 }
