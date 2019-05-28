@@ -6,33 +6,23 @@
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <html>
 <head>
     <title>Вопрос первого типа</title>
 </head>
 <body>
 <form action="testdemonstration?type=first" method="post">
-    <p><b>Вопрос n?</b></p>
-    <% for (int i=0; i<4;i++){ %>
+    <jsp:useBean id="test" scope="request" type="cathedra.model.Test" />
+    <c:forEach items="" var="">
+    <p><b>${test.question}</b></p>
     <div class="form-check">
-        <input class="form-check-input" type="radio" name="answer" id="exampleRadios1" value="" checked>
-        <label class="form-check-label" for="exampleRadios1">
+        <input class="form-check-input" type="radio" name="answer" id="exampleRadios" value="${test}">
+        <label class="form-check-label" for="exampleRadios">
             Первый вариант ответа
         </label>
     </div>
-    <%}%>
-    <%--<div class="form-check">--%>
-        <%--<input class="form-check-input" type="radio" name="answer" id="exampleRadios2" value="2">--%>
-        <%--<label class="form-check-label" for="exampleRadios2">--%>
-            <%--Второй вариант ответа--%>
-        <%--</label>--%>
-    <%--</div>--%>
-    <%--<div class="form-check">--%>
-        <%--<input class="form-check-input" type="radio" name="answer" id="exampleRadios3" value="3">--%>
-        <%--<label class="form-check-label" for="exampleRadios2">--%>
-            <%--Второй вариант ответа--%>
-        <%--</label>--%>
-    <%--</div>--%>
+    </c:forEach>
     <button type="first"> Ответить</button>
 </form>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
